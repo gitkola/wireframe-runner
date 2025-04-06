@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             overflow: hidden;
             font-family: Arial, sans-serif;
@@ -21,13 +21,13 @@
             -webkit-user-select: none;
             user-select: none;
         }
-
+        
         canvas {
             display: block;
             width: 100%;
             height: 100%;
         }
-
+        
         #ui {
             position: absolute;
             top: 0;
@@ -36,7 +36,7 @@
             height: 100%;
             pointer-events: none;
         }
-
+        
         #score {
             position: absolute;
             top: 20px;
@@ -45,157 +45,7 @@
             color: #fff;
             text-shadow: 0 0 5px #0ff;
         }
-
-        #pauseBtn {
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            font-size: 16px;
-            padding: 8px 16px;
-            background: transparent;
-            color: #fff;
-            border: 2px solid #fff;
-            border-radius: 4px;
-            cursor: pointer;
-            pointer-events: auto;
-            text-shadow: 0 0 5px #0ff;
-            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-        }
-
-        #pauseBtn:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        #audioBtn {
-            position: absolute;
-            top: 110px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            color: #fff;
-            border: 2px solid #fff;
-            border-radius: 4px;
-            cursor: pointer;
-            pointer-events: auto;
-            text-shadow: 0 0 5px #0ff;
-            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #audioBtn:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        #audioBtn .sound-icon {
-            width: 60%;
-            height: 60%;
-        }
-
-        #audioBtn .sound-wave {
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-        }
-
-        #audioBtn .sound-off {
-            fill: none;
-            stroke: #fff;
-            stroke-width: 2;
-            display: none;
-        }
-
-        #menuBtn {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border: 2px solid #fff;
-            border-radius: 4px;
-            cursor: pointer;
-            pointer-events: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 8px;
-            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-        }
-
-        #menuBtn:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        #menuBtn .line {
-            width: 100%;
-            height: 2px;
-            background-color: #fff;
-            box-shadow: 0 0 3px #0ff;
-        }
-
-        #scoreModal {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            max-width: 500px;
-            max-height: 80vh;
-            background-color: rgba(0, 0, 0, 0.9);
-            border: 2px solid #fff;
-            border-radius: 8px;
-            padding: 20px;
-            display: none;
-            flex-direction: column;
-            pointer-events: auto;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-            overflow-y: auto;
-        }
-
-        #scoreModal h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            text-shadow: 0 0 5px #0ff;
-        }
-
-        #scoreList {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #scoreList li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #scoreList li:last-child {
-            border-bottom: none;
-        }
-
-        #closeModalBtn {
-            margin-top: 20px;
-            padding: 8px 16px;
-            background: transparent;
-            color: #fff;
-            border: 2px solid #fff;
-            border-radius: 4px;
-            cursor: pointer;
-            align-self: center;
-            text-shadow: 0 0 5px #0ff;
-            box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-        }
-
-        #closeModalBtn:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
+        
         #gameOver {
             position: absolute;
             top: 50%;
@@ -204,18 +54,18 @@
             text-align: center;
             display: none;
         }
-
+        
         #gameOver h1 {
             font-size: 36px;
             margin-bottom: 20px;
             text-shadow: 0 0 10px #0ff;
         }
-
+        
         #finalScore {
             font-size: 24px;
             margin-bottom: 30px;
         }
-
+        
         #restartBtn {
             padding: 12px 24px;
             font-size: 18px;
@@ -228,11 +78,11 @@
             text-shadow: 0 0 5px #0ff;
             box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
         }
-
+        
         #restartBtn:hover {
             background: rgba(255, 255, 255, 0.1);
         }
-
+        
         #mobileControls {
             position: absolute;
             bottom: 30px;
@@ -241,7 +91,7 @@
             justify-content: space-between;
             padding: 0 50px;
         }
-
+        
         .control-btn {
             width: 70px;
             height: 70px;
@@ -255,22 +105,22 @@
             align-items: center;
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
         }
-
+        
         .arrow {
             width: 0;
             height: 0;
             border-top: 15px solid transparent;
             border-bottom: 15px solid transparent;
         }
-
+        
         #leftBtn .arrow {
             border-right: 20px solid #fff;
         }
-
+        
         #rightBtn .arrow {
             border-left: 20px solid #fff;
         }
-
+        
         #tutorialOverlay {
             position: absolute;
             top: 0;
@@ -285,19 +135,19 @@
             text-align: center;
             pointer-events: auto;
         }
-
+        
         #tutorialOverlay h2 {
             font-size: 28px;
             margin-bottom: 20px;
             text-shadow: 0 0 8px #0ff;
         }
-
+        
         #tutorialOverlay p {
             font-size: 18px;
             margin-bottom: 15px;
             max-width: 80%;
         }
-
+        
         #startBtn {
             margin-top: 30px;
             padding: 12px 24px;
@@ -310,32 +160,16 @@
             text-shadow: 0 0 5px #0ff;
             box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
         }
-
+        
         #startBtn:hover {
             background: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-
 <body>
     <div id="ui">
         <div id="score">Score: 0</div>
-        <button id="pauseBtn">PAUSE</button>
-        <button id="audioBtn">
-            <svg class="sound-icon" viewBox="0 0 24 24">
-                <path class="sound-base" d="M3,9 L7,9 L12,4 L12,20 L7,15 L3,15 Z" fill="#fff" />
-                <path class="sound-wave" d="M16,7 C17.66,7 19,8.34 19,10 C19,11.66 17.66,13 16,13" />
-                <path class="sound-wave" d="M16,3 C19.87,3 23,6.13 23,10 C23,13.87 19.87,17 16,17" />
-                <path class="sound-off" d="M19,10 L14,15" />
-                <path class="sound-off" d="M14,10 L19,15" />
-            </svg>
-        </button>
-        <button id="menuBtn">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </button>
-
+        
         <div id="mobileControls">
             <button id="leftBtn" class="control-btn">
                 <div class="arrow"></div>
@@ -344,13 +178,13 @@
                 <div class="arrow"></div>
             </button>
         </div>
-
+        
         <div id="gameOver">
             <h1>GAME OVER</h1>
             <div id="finalScore">Distance: 0</div>
             <button id="restartBtn">RESTART</button>
         </div>
-
+        
         <div id="tutorialOverlay">
             <h2>WIREFRAME WORLD RUNNER</h2>
             <p>Navigate through a wireframe landscape, avoiding obstacles.</p>
@@ -359,14 +193,8 @@
             <p>Survive as long as possible. The speed will increase over time.</p>
             <button id="startBtn">START GAME</button>
         </div>
-
-        <div id="scoreModal">
-            <h2>HIGH SCORES</h2>
-            <ul id="scoreList"></ul>
-            <button id="closeModalBtn">CLOSE</button>
-        </div>
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         // Game configuration
@@ -381,36 +209,13 @@
             obstacleColors: [0xFFFFFF, 0x00FFFF, 0xFF00FF, 0xFFFF00, 0x00FF00],
             playerSize: 0.5,
             obstacleSize: 1.2,
-            worldDepth: 100,
-            minObstacleDistance: 15, // Minimum distance between obstacles
-            dayNightCycleDuration: 60000, // Day/night cycle duration in ms
-            cameraInertia: 0.05, // Camera inertia factor (higher = more inertia)
-            cameraDynamics: {
-                minHeight: 2.5,
-                maxHeight: 4.0,
-                minDistance: 6,
-                maxDistance: 10,
-                cycleSpeed: 0.00005
-            },
-            // Flag to disable localStorage in artifact environment (set to true to disable)
-            disableStorage: false,
-            // Audio settings
-            audio: {
-                enabled: true,
-                tracks: [
-                    'track1.mp3',
-                    'track2.mp3',
-                    'track3.mp3'
-                ],
-                volume: 0.7
-            }
+            worldDepth: 100
         };
-
+        
         // Game state
         const game = {
             score: 0,
             isRunning: false,
-            isPaused: false,
             currentLane: 1, // 0: left, 1: center, 2: right
             lanes: [-config.laneWidth, 0, config.laneWidth],
             movingDirection: null,
@@ -419,131 +224,49 @@
             currentSpeed: config.gameSpeed,
             playerTrail: [],
             maxTrailLength: 15,
-            isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-            highScores: [],
-            dayNightCycle: 0, // 0-1 value representing day-night cycle (0 = night, 1 = day)
-            lastObstacleZ: -config.worldDepth, // Track last obstacle position for spacing
-            environmentObjects: [], // For animated landscape elements
-            cameraPosition: {
-                height: 3,
-                distance: 8,
-                cycleProgress: 0
-            },
-            audio: {
-                isEnabled: config.audio.enabled,
-                currentTrack: 0,
-                player: null,
-                isPlaying: false
-            }
+            isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
         };
-
+        
         // Initialize Three.js
         const scene = new Scene();
         const camera = new Camera();
         const renderer = new Renderer();
         const player = new Player();
-
+        
         // Initialize the game
         init();
-
+        
         // ------ CLASSES ------
-
+        
         function Scene() {
             this.instance = new THREE.Scene();
             this.instance.background = new THREE.Color(0x000000);
-            this.skyColor = new THREE.Color(0x000022);
-            this.dayColor = new THREE.Color(0x0066ff);
-            this.stars = [];
-            this.sun = null;
-            this.moon = null;
-
-            this.setup = function () {
-                // Add ambient light for base illumination
-                this.ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
-                this.instance.add(this.ambientLight);
-
-                // Add directional light for sun/moon
-                this.directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
-                this.directionalLight.position.set(0, 10, 10);
-                this.instance.add(this.directionalLight);
-
+            
+            this.setup = function() {
+                // Add ambient light
+                const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+                this.instance.add(ambientLight);
+                
+                // Add directional light
+                const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+                directionalLight.position.set(0, 10, 10);
+                this.instance.add(directionalLight);
+                
                 // Create wireframe grid for the floor
                 const gridSize = 200;
                 const gridDivisions = 50;
-                this.gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x0088ff, 0x0088ff);
-                this.gridHelper.position.y = -config.playerSize;
-                this.gridHelper.material.opacity = 0.2;
-                this.gridHelper.material.transparent = true;
-                this.instance.add(this.gridHelper);
-
-                // Create celestial objects for day/night cycle
-                this.createCelestialObjects();
-
-                // Create static distant environment elements
+                const gridHelper = new THREE.GridHelper(gridSize, gridDivisions, 0x0088ff, 0x0088ff);
+                gridHelper.position.y = -config.playerSize;
+                gridHelper.material.opacity = 0.2;
+                gridHelper.material.transparent = true;
+                this.instance.add(gridHelper);
+                
+                // Create distant environment elements (for depth perception)
                 this.createEnvironment();
-
-                // Create animated environment elements
-                this.createAnimatedEnvironment();
             };
-
-            this.createCelestialObjects = function () {
-                // Create sun (simple wireframe sphere)
-                const sunGeometry = new THREE.SphereGeometry(10, 8, 8);
-                const sunMaterial = new THREE.MeshBasicMaterial({
-                    color: 0xffff00,
-                    wireframe: true,
-                    transparent: true,
-                    opacity: 0.8
-                });
-                this.sun = new THREE.Mesh(sunGeometry, sunMaterial);
-                this.sun.position.set(80, 60, -150);
-                this.instance.add(this.sun);
-
-                // Create moon (simple wireframe sphere)
-                const moonGeometry = new THREE.SphereGeometry(6, 8, 8);
-                const moonMaterial = new THREE.MeshBasicMaterial({
-                    color: 0xaaaaff,
-                    wireframe: true,
-                    transparent: true,
-                    opacity: 0.8
-                });
-                this.moon = new THREE.Mesh(moonGeometry, moonMaterial);
-                this.moon.position.set(-80, 60, -150);
-                this.instance.add(this.moon);
-
-                // Create stars
-                const starGeometry = new THREE.TetrahedronGeometry(0.5, 0);
-                const starMaterial = new THREE.MeshBasicMaterial({
-                    color: 0xffffff,
-                    wireframe: true,
-                    transparent: true,
-                    opacity: 0.8
-                });
-
-                for (let i = 0; i < 100; i++) {
-                    const star = new THREE.Mesh(starGeometry, starMaterial.clone());
-                    star.position.set(
-                        (Math.random() - 0.5) * 200,
-                        30 + Math.random() * 50,
-                        -100 - Math.random() * 150
-                    );
-                    star.rotation.set(
-                        Math.random() * Math.PI,
-                        Math.random() * Math.PI,
-                        Math.random() * Math.PI
-                    );
-                    star.scale.multiplyScalar(0.5 + Math.random());
-                    star.userData = {
-                        twinkleSpeed: 0.001 + Math.random() * 0.005,
-                        twinklePhase: Math.random() * Math.PI * 2
-                    };
-                    this.stars.push(star);
-                    this.instance.add(star);
-                }
-            };
-
-            this.createEnvironment = function () {
-                // Add distant wireframe mountains for ambiance
+            
+            this.createEnvironment = function() {
+                // Add some distant wireframe mountains for ambiance
                 const mountainGeometry = new THREE.ConeGeometry(10, 20, 4, 2);
                 const mountainMaterial = new THREE.MeshBasicMaterial({
                     color: 0x0044ff,
@@ -551,7 +274,7 @@
                     transparent: true,
                     opacity: 0.2
                 });
-
+                
                 const mountainPositions = [
                     { x: -30, z: -80 },
                     { x: 30, z: -100 },
@@ -559,197 +282,51 @@
                     { x: 60, z: -150 },
                     { x: 0, z: -200 }
                 ];
-
+                
                 mountainPositions.forEach(pos => {
                     const mountain = new THREE.Mesh(mountainGeometry, mountainMaterial);
                     mountain.position.set(pos.x, 0, pos.z);
                     scene.instance.add(mountain);
                 });
             };
-
-            this.createAnimatedEnvironment = function () {
-                // Create animated geometry forms that will float around
-                const shapes = [
-                    new THREE.TorusGeometry(5, 1, 8, 16),
-                    new THREE.IcosahedronGeometry(4, 0),
-                    new THREE.ConeGeometry(3, 8, 6),
-                    new THREE.TetrahedronGeometry(5, 0),
-                    new THREE.OctahedronGeometry(4, 0)
-                ];
-
-                const colors = [0x00ffff, 0xff00ff, 0xffff00, 0x00ff00, 0x0099ff];
-
-                for (let i = 0; i < 10; i++) {
-                    const shapeIndex = Math.floor(Math.random() * shapes.length);
-                    const colorIndex = Math.floor(Math.random() * colors.length);
-
-                    const material = new THREE.MeshBasicMaterial({
-                        color: colors[colorIndex],
-                        wireframe: true,
-                        transparent: true,
-                        opacity: 0.15
-                    });
-
-                    const object = new THREE.Mesh(shapes[shapeIndex], material);
-                    object.position.set(
-                        (Math.random() - 0.5) * 100,
-                        -10 + Math.random() * 30,
-                        -50 - Math.random() * 100
-                    );
-
-                    object.rotation.set(
-                        Math.random() * Math.PI * 2,
-                        Math.random() * Math.PI * 2,
-                        Math.random() * Math.PI * 2
-                    );
-
-                    // Store animation parameters
-                    object.userData = {
-                        rotationSpeed: {
-                            x: (Math.random() - 0.5) * 0.005,
-                            y: (Math.random() - 0.5) * 0.005,
-                            z: (Math.random() - 0.5) * 0.005
-                        },
-                        floatPhase: Math.random() * Math.PI * 2,
-                        floatSpeed: 0.0005 + Math.random() * 0.001,
-                        floatAmplitude: 2 + Math.random() * 5,
-                        driftSpeed: (Math.random() - 0.5) * 0.01
-                    };
-
-                    game.environmentObjects.push(object);
-                    this.instance.add(object);
-                }
-            };
-
-            this.updateDayNightCycle = function () {
-                // Calculate cycle value (0-1, where 0 is night, 1 is day)
-                const cycleTime = Date.now() % config.dayNightCycleDuration;
-                game.dayNightCycle = (1 + Math.sin(cycleTime / config.dayNightCycleDuration * Math.PI * 2 - Math.PI / 2)) / 2;
-
-                // Update sky color
-                this.skyColor.copy(this.dayColor).multiplyScalar(game.dayNightCycle).add(
-                    new THREE.Color(0x000022).multiplyScalar(1 - game.dayNightCycle)
-                );
-                this.instance.background = this.skyColor;
-
-                // Update grid color based on time of day
-                const gridColor = new THREE.Color(0x0088ff).multiplyScalar(0.5 + game.dayNightCycle * 0.5);
-                this.gridHelper.material.color = gridColor;
-
-                // Update ambient light
-                this.ambientLight.intensity = 0.3 + game.dayNightCycle * 0.4;
-
-                // Update directional light
-                this.directionalLight.intensity = 0.5 + game.dayNightCycle * 0.5;
-
-                // Update sun and moon positions and opacity
-                const angle = (game.dayNightCycle * Math.PI * 2) - Math.PI / 2;
-                const sunY = Math.sin(angle) * 70;
-                const sunZ = -150 - Math.cos(angle) * 50;
-                this.sun.position.y = sunY;
-                this.sun.position.z = sunZ;
-                this.sun.material.opacity = Math.max(0.1, game.dayNightCycle);
-
-                const moonAngle = angle + Math.PI;
-                const moonY = Math.sin(moonAngle) * 70;
-                const moonZ = -150 - Math.cos(moonAngle) * 50;
-                this.moon.position.y = moonY;
-                this.moon.position.z = moonZ;
-                this.moon.material.opacity = Math.max(0.1, 1 - game.dayNightCycle);
-
-                // Update stars visibility
-                this.stars.forEach(star => {
-                    const twinkle = Math.sin(Date.now() * star.userData.twinkleSpeed + star.userData.twinklePhase) * 0.5 + 0.5;
-                    star.material.opacity = Math.max(0.1, (1 - game.dayNightCycle) * 0.8) * twinkle;
-                });
-            };
-
-            this.updateAnimatedEnvironment = function () {
-                if (!game.isRunning || game.isPaused) return;
-
-                game.environmentObjects.forEach(object => {
-                    // Apply rotation
-                    object.rotation.x += object.userData.rotationSpeed.x;
-                    object.rotation.y += object.userData.rotationSpeed.y;
-                    object.rotation.z += object.userData.rotationSpeed.z;
-
-                    // Apply floating motion
-                    const floatY = Math.sin(Date.now() * object.userData.floatSpeed + object.userData.floatPhase)
-                        * object.userData.floatAmplitude;
-                    object.position.y = object.position.y * 0.99 + (floatY - 5) * 0.01;
-
-                    // Apply drift
-                    object.position.x += object.userData.driftSpeed;
-
-                    // Reset position if far from center to create infinite effect
-                    if (Math.abs(object.position.x) > 100) {
-                        object.position.x = -Math.sign(object.position.x) * 100;
-                    }
-                });
-            };
         }
-
+        
         function Camera() {
             this.instance = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-            this.setup = function () {
+            
+            this.setup = function() {
                 this.instance.position.set(0, 3, 8);
                 this.instance.lookAt(0, 0, -20);
             };
-
-            this.update = function () {
-                // Progress camera cycle for dynamic movement
-                game.cameraPosition.cycleProgress += config.cameraDynamics.cycleSpeed;
-
-                // Calculate dynamic camera height and distance using sine waves
-                const heightCycle = Math.sin(game.cameraPosition.cycleProgress);
-                const distanceCycle = Math.cos(game.cameraPosition.cycleProgress * 0.7);
-
-                const targetHeight = config.cameraDynamics.minHeight +
-                    (heightCycle * 0.5 + 0.5) * (config.cameraDynamics.maxHeight - config.cameraDynamics.minHeight);
-
-                const targetDistance = config.cameraDynamics.minDistance +
-                    (distanceCycle * 0.5 + 0.5) * (config.cameraDynamics.maxDistance - config.cameraDynamics.minDistance);
-
-                // Update camera position with inertia
-                game.cameraPosition.height += (targetHeight - game.cameraPosition.height) * config.cameraInertia;
-                game.cameraPosition.distance += (targetDistance - game.cameraPosition.distance) * config.cameraInertia;
-
-                // Add player tracking with inertia
+            
+            this.update = function() {
+                // Add subtle camera movement for visual interest
                 const playerX = player.instance.position.x;
                 const targetX = playerX * 0.3; // Follow player with slight delay
-                this.instance.position.x += (targetX - this.instance.position.x) * config.cameraInertia;
-
-                // Set camera position with height and distance
-                this.instance.position.y = game.cameraPosition.height;
-                this.instance.position.z = game.cameraPosition.distance;
-
-                // Add slight camera sway based on speed
-                const speedFactor = game.currentSpeed / config.gameSpeed;
-                const swayAmount = Math.sin(Date.now() * 0.002) * 0.03 * speedFactor;
-                this.instance.position.y += swayAmount;
-
-                // Look ahead of player
-                const lookAheadX = playerX * 0.2;
-                const lookAheadY = -2 + speedFactor * 3; // Look down more at higher speeds
-                this.instance.lookAt(lookAheadX, lookAheadY, -30);
+                this.instance.position.x += (targetX - this.instance.position.x) * 0.05;
+                
+                // Slight camera sway based on speed
+                const swayAmount = Math.sin(Date.now() * 0.002) * 0.03 * (game.currentSpeed / config.gameSpeed);
+                this.instance.position.y = 3 + swayAmount;
+                
+                this.instance.lookAt(playerX * 0.2, 0, -20);
             };
         }
-
+        
         function Renderer() {
             this.instance = new THREE.WebGLRenderer({ antialias: true });
-
-            this.setup = function () {
+            
+            this.setup = function() {
                 this.instance.setSize(window.innerWidth, window.innerHeight);
                 this.instance.setPixelRatio(Math.min(window.devicePixelRatio, 2));
                 document.body.appendChild(this.instance.domElement);
             };
-
-            this.render = function () {
+            
+            this.render = function() {
                 this.instance.render(scene.instance, camera.instance);
             };
         }
-
+        
         function Player() {
             // Create player mesh
             const geometry = new THREE.BoxGeometry(config.playerSize, config.playerSize, config.playerSize);
@@ -757,42 +334,42 @@
                 color: 0xffffff,
                 wireframe: true
             });
-
+            
             this.instance = new THREE.Mesh(geometry, material);
-
+            
             // Create player glow
             this.glow = new THREE.PointLight(0x00ffff, 1, 3);
             this.glow.intensity = 0.5;
-
-            this.setup = function () {
+            
+            this.setup = function() {
                 this.instance.position.set(0, 0, 0);
                 scene.instance.add(this.instance);
-
+                
                 this.glow.position.copy(this.instance.position);
                 scene.instance.add(this.glow);
             };
-
-            this.update = function () {
+            
+            this.update = function() {
                 // Update player position based on lane
                 const targetX = game.lanes[game.currentLane];
                 this.instance.position.x += (targetX - this.instance.position.x) * config.playerSpeed;
-
+                
                 // Rotate player for visual effect
                 this.instance.rotation.x += 0.02;
                 this.instance.rotation.y += 0.02;
-
+                
                 // Update glow position
                 this.glow.position.copy(this.instance.position);
-
+                
                 // Update trail
                 this.updateTrail();
             };
-
-            this.updateTrail = function () {
+            
+            this.updateTrail = function() {
                 // Add current position to trail
-                if (game.playerTrail.length === 0 ||
+                if (game.playerTrail.length === 0 || 
                     this.instance.position.distanceTo(game.playerTrail[game.playerTrail.length - 1].position) > 0.1) {
-
+                    
                     // Create a new trail segment
                     const trailGeometry = new THREE.BoxGeometry(config.playerSize * 0.5, config.playerSize * 0.5, config.playerSize * 0.5);
                     const trailMaterial = new THREE.MeshBasicMaterial({
@@ -801,12 +378,12 @@
                         transparent: true,
                         opacity: 0.7
                     });
-
+                    
                     const trailSegment = new THREE.Mesh(trailGeometry, trailMaterial);
                     trailSegment.position.copy(this.instance.position);
                     trailSegment.rotation.copy(this.instance.rotation);
                     scene.instance.add(trailSegment);
-
+                    
                     // Store the segment with creation time
                     game.playerTrail.push({
                         mesh: trailSegment,
@@ -814,15 +391,15 @@
                         time: Date.now()
                     });
                 }
-
+                
                 // Fade out and remove old trail segments
                 for (let i = game.playerTrail.length - 1; i >= 0; i--) {
                     const segment = game.playerTrail[i];
                     const age = (Date.now() - segment.time) / 1000;
-
+                    
                     // Fade out based on age
                     segment.mesh.material.opacity = Math.max(0, 0.7 - age);
-
+                    
                     // Remove if too old or too many segments
                     if (age > 1 || game.playerTrail.length > game.maxTrailLength) {
                         scene.instance.remove(segment.mesh);
@@ -831,12 +408,12 @@
                 }
             };
         }
-
+        
         function Obstacle(type, lane) {
             let geometry;
-
+            
             // Create appropriate geometry based on type
-            switch (type) {
+            switch(type) {
                 case 'pyramid':
                     geometry = new THREE.ConeGeometry(config.obstacleSize / 2, config.obstacleSize, 4);
                     break;
@@ -855,494 +432,268 @@
                 default:
                     geometry = new THREE.BoxGeometry(config.obstacleSize, config.obstacleSize, config.obstacleSize);
             }
-
+            
             // Randomly select color from the predefined colors
             const colorIndex = Math.floor(Math.random() * config.obstacleColors.length);
             const color = config.obstacleColors[colorIndex];
-
+            
             const material = new THREE.MeshBasicMaterial({
                 color: color,
                 wireframe: true
             });
-
+            
             this.instance = new THREE.Mesh(geometry, material);
             this.type = type;
             this.lane = lane;
             this.active = true;
-
-            // Store animation parameters for obstacle morphing/animation
-            this.animation = {
-                morphSpeed: 0.001 + Math.random() * 0.002,
-                morphPhase: Math.random() * Math.PI * 2,
-                morphAmount: 0.2 + Math.random() * 0.2,
-                rotationSpeeds: {
-                    x: (Math.random() - 0.5) * 0.02,
-                    y: (Math.random() - 0.5) * 0.02,
-                    z: (Math.random() - 0.5) * 0.02
-                }
-            };
-
-            this.setup = function () {
+            
+            this.setup = function() {
                 // Position the obstacle in the correct lane and far ahead
                 this.instance.position.x = game.lanes[lane];
                 this.instance.position.z = -config.worldDepth;
                 scene.instance.add(this.instance);
             };
-
-            this.update = function () {
+            
+            this.update = function() {
                 // Move obstacle towards player
                 this.instance.position.z += game.currentSpeed;
-
-                this.isCollidingWithPlayer = function () {
-                    // Simple collision detection based on distance and lane
-                    const dx = Math.abs(this.instance.position.x - player.instance.position.x);
-                    const dz = Math.abs(this.instance.position.z - player.instance.position.z);
-                    const collisionThreshold = config.obstacleSize / 2 + config.playerSize / 2;
-
-                    return dx < collisionThreshold && dz < collisionThreshold;
-                };
-
-                this.reset = function () {
-                    // Reset obstacle position and make it active again
-                    this.instance.position.x = game.lanes[lane];
-                    this.instance.position.z = -config.worldDepth;
-                    this.active = true;
-                };
+                
+                // Rotate obstacle for visual effect
+                switch(this.type) {
+                    case 'pyramid':
+                        this.instance.rotation.y += 0.01;
+                        break;
+                    case 'cube':
+                        this.instance.rotation.x += 0.01;
+                        this.instance.rotation.y += 0.01;
+                        break;
+                    case 'sphere':
+                        this.instance.rotation.x += 0.01;
+                        this.instance.rotation.z += 0.01;
+                        break;
+                    case 'torus':
+                        this.instance.rotation.x += 0.02;
+                        break;
+                    case 'cylinder':
+                        this.instance.rotation.z += 0.02;
+                        break;
+                }
+                
+                // Check if passed the player
+                if (this.instance.position.z > 5) {
+                    this.active = false;
+                }
+                
+                // Check collision with player
+                if (this.active && this.isCollidingWithPlayer()) {
+                    gameOver();
+                }
+            };
+            
+            this.isCollidingWithPlayer = function() {
+                // Simple collision detection based on distance and lane
+                const dx = Math.abs(this.instance.position.x - player.instance.position.x);
+                const dz = Math.abs(this.instance.position.z - player.instance.position.z);
+                const collisionThreshold = config.obstacleSize / 2 + config.playerSize / 2;
+                
+                return dx < collisionThreshold && dz < collisionThreshold;
+            };
+            
+            this.reset = function() {
+                // Reset obstacle position and make it active again
+                this.instance.position.x = game.lanes[lane];
+                this.instance.position.z = -config.worldDepth;
+                this.active = true;
+            };
+        }
+        
+        // ------ GAME FUNCTIONS ------
+        
+        function init() {
+            // Set up scene, camera, and renderer
+            scene.setup();
+            camera.setup();
+            renderer.setup();
+            player.setup();
+            
+            // Add event listeners
+            setupEventListeners();
+            
+            // Start animation loop
+            animate();
+        }
+        
+        function startGame() {
+            // Reset game state
+            game.score = 0;
+            game.currentSpeed = config.gameSpeed;
+            game.isRunning = true;
+            game.currentLane = 1;
+            
+            // Reset player position
+            player.instance.position.set(0, 0, 0);
+            
+            // Clear existing obstacles
+            game.obstacles.forEach(obstacle => {
+                scene.instance.remove(obstacle.instance);
+            });
+            game.obstacles = [];
+            
+            // Clear player trail
+            game.playerTrail.forEach(segment => {
+                scene.instance.remove(segment.mesh);
+            });
+            game.playerTrail = [];
+            
+            // Update UI
+            document.getElementById('score').textContent = 'Score: 0';
+            document.getElementById('gameOver').style.display = 'none';
+            document.getElementById('tutorialOverlay').style.display = 'none';
+            
+            // Show mobile controls if on mobile device
+            if (game.isMobile) {
+                document.getElementById('mobileControls').style.display = 'flex';
+            } else {
+                document.getElementById('mobileControls').style.display = 'none';
             }
-
-            // ------ GAME FUNCTIONS ------
-
-            // Audio system functions
-            function initAudio() {
-                if (!game.audio.player && typeof Audio !== 'undefined') {
-                    // Create new audio player
-                    game.audio.player = new Audio();
-
-                    // Set event listeners for audio
-                    game.audio.player.addEventListener('ended', function () {
-                        // Play next track when current one ends
-                        playNextTrack();
-                    });
-
-                    // Set initial track
-                    game.audio.currentTrack = 0;
-
-                    // Update audio button state
-                    updateAudioButtonState();
-
-                    // Start playing if enabled
-                    if (game.audio.isEnabled) {
-                        playCurrentTrack();
+        }
+        
+        function gameOver() {
+            game.isRunning = false;
+            
+            // Update UI
+            document.getElementById('gameOver').style.display = 'block';
+            document.getElementById('finalScore').textContent = 'Distance: ' + Math.floor(game.score);
+        }
+        
+        function movePlayer(direction) {
+            if (!game.isRunning) return;
+            
+            if (direction === 'left' && game.currentLane > 0) {
+                game.currentLane--;
+            } else if (direction === 'right' && game.currentLane < 2) {
+                game.currentLane++;
+            }
+        }
+        
+        function spawnObstacle() {
+            // Randomly decide whether to spawn an obstacle
+            if (Math.random() < config.obstacleSpawnRate) {
+                // Choose a random lane and obstacle type
+                const lane = Math.floor(Math.random() * 3);
+                const typeIndex = Math.floor(Math.random() * config.obstacleTypes.length);
+                const type = config.obstacleTypes[typeIndex];
+                
+                // Check if we can reuse an inactive obstacle from the pool
+                let obstacle = null;
+                for (let i = 0; i < game.obstaclePool.length; i++) {
+                    if (!game.obstaclePool[i].active && game.obstaclePool[i].type === type) {
+                        obstacle = game.obstaclePool[i];
+                        obstacle.lane = lane;
+                        obstacle.reset();
+                        break;
                     }
                 }
+                
+                // If no suitable obstacle in the pool, create a new one
+                if (!obstacle) {
+                    obstacle = new Obstacle(type, lane);
+                    obstacle.setup();
+                    game.obstaclePool.push(obstacle);
+                }
+                
+                // Add to active obstacles
+                game.obstacles.push(obstacle);
             }
-
-            function playCurrentTrack() {
-                if (game.audio.player && config.audio.tracks.length > 0) {
-                    const track = config.audio.tracks[game.audio.currentTrack];
-                    game.audio.player.src = track;
-                    game.audio.player.volume = config.audio.volume;
-
-                    // Use a promise to handle autoplay restrictions
-                    const playPromise = game.audio.player.play();
-
-                    if (playPromise !== undefined) {
-                        playPromise.catch(function (error) {
-                            // Auto-play was prevented
-                            console.log("Autoplay prevented:", error);
-                            // We'll try to play on the first user interaction instead
-                            game.audio.isPlaying = false;
-                            updateAudioButtonState();
-                        }).then(function () {
-                            // Audio started playing successfully
-                            game.audio.isPlaying = true;
-                            updateAudioButtonState();
-                        });
-                    }
+        }
+        
+        function updateObstacles() {
+            for (let i = game.obstacles.length - 1; i >= 0; i--) {
+                const obstacle = game.obstacles[i];
+                
+                // Update active obstacles
+                if (obstacle.active) {
+                    obstacle.update();
+                } 
+                
+                // Remove inactive obstacles from the active list
+                if (!obstacle.active) {
+                    game.obstacles.splice(i, 1);
                 }
             }
-
-            function playNextTrack() {
-                if (game.audio.player && config.audio.tracks.length > 0) {
-                    // Move to next track
-                    game.audio.currentTrack = (game.audio.currentTrack + 1) % config.audio.tracks.length;
-
-                    // Only play if audio is enabled
-                    if (game.audio.isEnabled) {
-                        playCurrentTrack();
-                    }
-                }
+        }
+        
+        function updateGameState() {
+            if (!game.isRunning) return;
+            
+            // Increase score based on game speed
+            game.score += game.currentSpeed;
+            document.getElementById('score').textContent = 'Score: ' + Math.floor(game.score);
+            
+            // Gradually increase game speed
+            if (game.currentSpeed < config.maxGameSpeed) {
+                game.currentSpeed += config.speedIncreaseRate;
             }
-
-            function toggleAudio() {
-                game.audio.isEnabled = !game.audio.isEnabled;
-
-                if (game.audio.player) {
-                    if (game.audio.isEnabled) {
-                        playCurrentTrack();
-                    } else {
-                        game.audio.player.pause();
-                        game.audio.isPlaying = false;
-                    }
-
-                    updateAudioButtonState();
-                }
-            }
-
-            function updateAudioButtonState() {
-                const audioBtn = document.getElementById('audioBtn');
-                const waves = audioBtn.querySelectorAll('.sound-wave');
-                const muteLines = audioBtn.querySelectorAll('.sound-off');
-
-                if (game.audio.isEnabled) {
-                    // Show sound waves
-                    waves.forEach(wave => wave.style.display = 'block');
-                    // Hide mute lines
-                    muteLines.forEach(line => line.style.display = 'none');
-                } else {
-                    // Hide sound waves
-                    waves.forEach(wave => wave.style.display = 'none');
-                    // Show mute lines
-                    muteLines.forEach(line => line.style.display = 'block');
-                }
-            }
-
-            function init() {
-                // Set up scene, camera, and renderer
-                scene.setup();
-                camera.setup();
-                renderer.setup();
-                player.setup();
-
-                // Load high scores
-                loadHighScores();
-
-                // Initialize audio system
-                initAudio();
-
-                // Add event listeners
-                setupEventListeners();
-
-                // Start animation loop
-                animate();
-            }
-
-            // Load high scores from localStorage
-            function loadHighScores() {
-                // Only attempt to load scores if storage is enabled and localStorage is available
-                if (!config.disableStorage && typeof localStorage !== 'undefined') {
-                    try {
-                        const savedScores = localStorage.getItem('wireframeRunnerScores');
-                        if (savedScores) {
-                            game.highScores = JSON.parse(savedScores);
-                        }
-                    } catch (e) {
-                        console.error('Error loading high scores:', e);
-                    }
-                }
-            }
-
-            // Save a new score
-            function saveScore(score) {
-                // Only attempt to save scores if storage is enabled and localStorage is available
-                if (!config.disableStorage && typeof localStorage !== 'undefined') {
-                    try {
-                        const now = new Date();
-                        const formattedDate = now.toISOString().slice(0, 19).replace('T', ' ');
-
-                        // Create a new score entry
-                        const newScore = {
-                            date: formattedDate,
-                            score: Math.floor(score)
-                        };
-
-                        // Add to high scores
-                        game.highScores.push(newScore);
-
-                        // Sort scores (highest first)
-                        game.highScores.sort((a, b) => b.score - a.score);
-
-                        // Keep only top 10 scores
-                        if (game.highScores.length > 10) {
-                            game.highScores = game.highScores.slice(0, 10);
-                        }
-
-                        // Save to localStorage
-                        localStorage.setItem('wireframeRunnerScores', JSON.stringify(game.highScores));
-                    } catch (e) {
-                        console.error('Error saving high scores:', e);
-                    }
-                }
-            }
-
-            // Update high scores display
-            function updateScoreDisplay() {
-                const scoreList = document.getElementById('scoreList');
-                scoreList.innerHTML = '';
-
-                if (game.highScores.length === 0) {
-                    const li = document.createElement('li');
-                    li.textContent = 'No scores yet';
-                    scoreList.appendChild(li);
-                    return;
-                }
-
-                game.highScores.forEach(score => {
-                    const li = document.createElement('li');
-                    li.innerHTML = `<span>${score.date}</span> <span>${score.score}</span>`;
-                    scoreList.appendChild(li);
-                });
-            }
-
-            function startGame() {
-                // Reset game state
-                game.score = 0;
-                game.currentSpeed = config.gameSpeed;
-                game.isRunning = true;
-                game.isPaused = false;
-                game.currentLane = 1;
-
-                // Reset player position
-                player.instance.position.set(0, 0, 0);
-
-                // Clear existing obstacles
-                game.obstacles.forEach(obstacle => {
-                    scene.instance.remove(obstacle.instance);
-                });
-                game.obstacles = [];
-
-                // Clear player trail
-                game.playerTrail.forEach(segment => {
-                    scene.instance.remove(segment.mesh);
-                });
-                game.playerTrail = [];
-
-                // Update UI
-                document.getElementById('score').textContent = 'Score: 0';
-                document.getElementById('gameOver').style.display = 'none';
-                document.getElementById('tutorialOverlay').style.display = 'none';
-                document.getElementById('scoreModal').style.display = 'none';
-                document.getElementById('pauseBtn').textContent = 'PAUSE';
-
-                // Show mobile controls if on mobile device
-                if (game.isMobile) {
-                    document.getElementById('mobileControls').style.display = 'flex';
-                } else {
-                    document.getElementById('mobileControls').style.display = 'none';
-                }
-
-                // Resume playing music if it was enabled
-                if (game.audio.isEnabled && game.audio.player && !game.audio.isPlaying) {
-                    playCurrentTrack();
-                }
-            }
-
-            function togglePause() {
-                if (!game.isRunning) return;
-
-                game.isPaused = !game.isPaused;
-
-                if (game.isPaused) {
-                    document.getElementById('pauseBtn').textContent = 'RESUME';
-                    // Pause music if it's playing
-                    if (game.audio.player && game.audio.isPlaying) {
-                        game.audio.player.pause();
-                    }
-                } else {
-                    document.getElementById('pauseBtn').textContent = 'PAUSE';
-                    // Resume music if it was enabled
-                    if (game.audio.player && game.audio.isEnabled) {
-                        game.audio.player.play().catch(e => console.log("Could not resume audio:", e));
-                    }
-                }
-            }
-
-            function gameOver() {
-                game.isRunning = false;
-
-                // Save the score
-                saveScore(game.score);
-
-                // Update UI
-                document.getElementById('gameOver').style.display = 'block';
-                document.getElementById('finalScore').textContent = 'Distance: ' + Math.floor(game.score);
-            }
-
-            function movePlayer(direction) {
-                if (!game.isRunning || game.isPaused) return;
-
-                if (direction === 'left' && game.currentLane > 0) {
-                    game.currentLane--;
-                } else if (direction === 'right' && game.currentLane < 2) {
-                    game.currentLane++;
-                }
-            }
-
-            function spawnObstacle() {
-                // Randomly decide whether to spawn an obstacle
-                if (Math.random() < config.obstacleSpawnRate) {
-                    // Choose a random lane and obstacle type
-                    const lane = Math.floor(Math.random() * 3);
-                    const typeIndex = Math.floor(Math.random() * config.obstacleTypes.length);
-                    const type = config.obstacleTypes[typeIndex];
-
-                    // Calculate minimum Z position based on last obstacle
-                    const minZ = game.lastObstacleZ + config.minObstacleDistance;
-
-                    // Only spawn if we're not too close to the last obstacle
-                    if (minZ <= -config.worldDepth) {
-                        // Check if we can reuse an inactive obstacle from the pool
-                        let obstacle = null;
-                        for (let i = 0; i < game.obstaclePool.length; i++) {
-                            if (!game.obstaclePool[i].active && game.obstaclePool[i].type === type) {
-                                obstacle = game.obstaclePool[i];
-                                obstacle.lane = lane;
-                                obstacle.reset();
-                                break;
-                            }
-                        }
-
-                        // If no suitable obstacle in the pool, create a new one
-                        if (!obstacle) {
-                            obstacle = new Obstacle(type, lane);
-                            obstacle.setup();
-                            game.obstaclePool.push(obstacle);
-                        }
-
-                        // Update last obstacle position
-                        game.lastObstacleZ = -config.worldDepth;
-
-                        // Add to active obstacles
-                        game.obstacles.push(obstacle);
-                    }
-                }
-            }
-
-            function updateObstacles() {
-                for (let i = game.obstacles.length - 1; i >= 0; i--) {
-                    const obstacle = game.obstacles[i];
-
-                    // Update active obstacles
-                    if (obstacle.active) {
-                        obstacle.update();
-                    }
-
-                    // Remove inactive obstacles from the active list
-                    if (!obstacle.active) {
-                        game.obstacles.splice(i, 1);
-                    }
-                }
-            }
-
-            function updateGameState() {
-                if (!game.isRunning || game.isPaused) return;
-
-                // Increase score based on game speed
-                game.score += game.currentSpeed;
-                document.getElementById('score').textContent = 'Score: ' + Math.floor(game.score);
-
-                // Gradually increase game speed
-                if (game.currentSpeed < config.maxGameSpeed) {
-                    game.currentSpeed += config.speedIncreaseRate;
-                }
-
-                // Update day/night cycle
-                scene.updateDayNightCycle();
-
-                // Update animated environment
-                scene.updateAnimatedEnvironment();
-
-                // Spawn new obstacles
-                spawnObstacle();
-
-                // Update existing obstacles
-                updateObstacles();
-            }
-
-            function animate() {
-                requestAnimationFrame(animate);
-
-                // Update game state
-                updateGameState();
-
-                // Only update player and camera if game is running and not paused
-                if (game.isRunning && !game.isPaused) {
-                    player.update();
-                    camera.update();
-                }
-
-                // Render the scene
-                renderer.render();
-            }
-
-            function setupEventListeners() {
-                // Keyboard controls
-                document.addEventListener('keydown', function (event) {
-                    if (event.key === 'ArrowLeft') {
-                        movePlayer('left');
-                    } else if (event.key === 'ArrowRight') {
-                        movePlayer('right');
-                    } else if (event.key === 'p' || event.key === 'P') {
-                        togglePause();
-                    } else if (event.key === 'm' || event.key === 'M') {
-                        toggleAudio();
-                    } else if (event.key === 'Escape') {
-                        if (document.getElementById('scoreModal').style.display === 'flex') {
-                            document.getElementById('scoreModal').style.display = 'none';
-                        }
-                    }
-                });
-
-                // Mobile controls
-                document.getElementById('leftBtn').addEventListener('touchstart', function (event) {
-                    event.preventDefault();
+            
+            // Spawn new obstacles
+            spawnObstacle();
+            
+            // Update existing obstacles
+            updateObstacles();
+        }
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Update game state
+            updateGameState();
+            
+            // Update player and camera
+            player.update();
+            camera.update();
+            
+            // Render the scene
+            renderer.render();
+        }
+        
+        function setupEventListeners() {
+            // Keyboard controls
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'ArrowLeft') {
                     movePlayer('left');
-                });
-
-                document.getElementById('rightBtn').addEventListener('touchstart', function (event) {
-                    event.preventDefault();
+                } else if (event.key === 'ArrowRight') {
                     movePlayer('right');
-                });
-
-                // Pause button
-                document.getElementById('pauseBtn').addEventListener('click', function () {
-                    togglePause();
-                });
-
-                // Audio button
-                document.getElementById('audioBtn').addEventListener('click', function () {
-                    toggleAudio();
-                });
-
-                // Menu button
-                document.getElementById('menuBtn').addEventListener('click', function () {
-                    updateScoreDisplay();
-                    document.getElementById('scoreModal').style.display = 'flex';
-                });
-
-                // Close modal button
-                document.getElementById('closeModalBtn').addEventListener('click', function () {
-                    document.getElementById('scoreModal').style.display = 'none';
-                });
-
-                // Restart button
-                document.getElementById('restartBtn').addEventListener('click', function () {
-                    startGame();
-                });
-
-                // Start button
-                document.getElementById('startBtn').addEventListener('click', function () {
-                    startGame();
-                });
-
-                // Window resize
-                window.addEventListener('resize', function () {
-                    camera.instance.aspect = window.innerWidth / window.innerHeight;
-                    camera.instance.updateProjectionMatrix();
-                    renderer.instance.setSize(window.innerWidth, window.innerHeight);
-                });
-            }
+                }
+            });
+            
+            // Mobile controls
+            document.getElementById('leftBtn').addEventListener('touchstart', function(event) {
+                event.preventDefault();
+                movePlayer('left');
+            });
+            
+            document.getElementById('rightBtn').addEventListener('touchstart', function(event) {
+                event.preventDefault();
+                movePlayer('right');
+            });
+            
+            // Restart button
+            document.getElementById('restartBtn').addEventListener('click', function() {
+                startGame();
+            });
+            
+            // Start button
+            document.getElementById('startBtn').addEventListener('click', function() {
+                startGame();
+            });
+            
+            // Window resize
+            window.addEventListener('resize', function() {
+                camera.instance.aspect = window.innerWidth / window.innerHeight;
+                camera.instance.updateProjectionMatrix();
+                renderer.instance.setSize(window.innerWidth, window.innerHeight);
+            });
+        }
     </script>
 </body>
-
 </html>
